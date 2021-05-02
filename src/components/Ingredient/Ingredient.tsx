@@ -14,12 +14,8 @@ const Ingredient: React.FC<Props> = ({item,handleAddToCart}) => {
 
   return (
     <Wrapper>
-      <div className='grid'>
-      <p>Ingredient:</p>
-      <p>Price:</p>
-      <p>{item.name}</p>
-      <p>{item.price}</p>
-      </div>
+        <p>{item.name}</p>
+        <p>{item.price}</p>
        <Button onClick={() => handleAddToCart(item) }>Add</Button>
     </Wrapper>
   

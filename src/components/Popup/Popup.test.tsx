@@ -1,14 +1,14 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import CartDrawer from './CartDrawer';
+import Popup from './Popup';
 
-describe('<Cart />', () => {
+describe('<Popup />', () => {
   test('it should mount', () => {
-    render(<CartDrawer />);
+    render(<Popup />);
     
-    const cart = screen.getByTestId('Cart');
+    const popup = screen.getByTestId('Popup');
 
-    expect(cart).toBeInTheDocument();
+    expect(popup).toBeInTheDocument();
   });
 });

@@ -12,3 +12,10 @@ export function open() {
 export function close() {
     return action(Constants.ClOSE_DRAWER);
 }
+export function RemoveItem(index:number) {
+    return action(Constants.REMOVE_ITEM,index);
+}
+
+export function CalculateAmount() {
+    return action(Constants.AMOUNT);
+}

@@ -1,12 +1,12 @@
-import { createStore, Store, applyMiddleware } from 'redux';
-import thunk from "redux-thunk"
+import { createStore, Store, } from 'redux';
 import CartReducer from "../reducers";
 import { StoreType } from "../Types";
 
 const initialState: StoreType =
 {
     open: false,
-    Items:[]
+    Items: [],
+    amount: 0
 }
 
 
