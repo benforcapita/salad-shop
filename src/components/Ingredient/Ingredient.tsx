@@ -1,5 +1,6 @@
 import React from 'react';
-import Button from "@material-ui/core/Button";
+import IconButton from '@material-ui/core/IconButton'
+import Add from "@material-ui/icons/Add";
 //type
 //style
 import { Wrapper } from "./Ingredient.style";
@@ -16,7 +17,7 @@ const Ingredient: React.FC<Props> = ({item,handleAddToCart}) => {
     <Wrapper>
         <p>{item.name}</p>
         <p>{item.price}</p>
-       <Button onClick={() => handleAddToCart(item) }>Add</Button>
+       <IconButton onClick={() => handleAddToCart(item) }><Add/></IconButton>
     </Wrapper>
   
   )
