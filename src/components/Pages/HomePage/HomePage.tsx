@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 
 const HomePage: React.FC = () => (
-  <Wrapper>
+  <Wrapper data-testid="HomePage">
     <h1>Welcome To my Salad Shop</h1>
       <Link to="/shop">Order Salad</Link>
 </Wrapper>

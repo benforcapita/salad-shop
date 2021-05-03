@@ -16,7 +16,7 @@ const Popup: React.FC<Props> = ({ isOpen, totalPrice}) => {
   
   const items =  useSelector((state: types.StoreType) => state.Items)
     return ((isOpen === false) ? <NoneVisibleDiv></NoneVisibleDiv> :
-      <PopupBox>
+      <PopupBox data-testid="Popup">
         <div className="content">
           <h2>Thank you for your Order</h2>
           <p>You ordered: </p>

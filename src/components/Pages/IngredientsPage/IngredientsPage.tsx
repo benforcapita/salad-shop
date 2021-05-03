@@ -28,7 +28,7 @@ const { data, isLoading, error } = useQuery<SaladIngredientsItem[]>(
   if (error)
     return <div>something went wrong</div>
   return (
-    <Wrapper>
+    <Wrapper data-testid = "IngredientsPage">
       <Grid container spacing = {2}>
         {
           data?.map(item => (

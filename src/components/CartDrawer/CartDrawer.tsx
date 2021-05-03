@@ -15,7 +15,7 @@ const CartDrawer: React.FC = () => {
   
   const dispatch = useDispatch();
   return (
-    <Wrapper>
+    <Wrapper data-testid="CartDrawer">
       <Drawer anchor='right' open={cartOpen} onClose={(e) => dispatch(actions.close())}>
        <Cart/>
       </Drawer>

@@ -11,7 +11,7 @@ const Cart: React.FC = () => {
   const cartItems = useSelector((state: types.StoreType) => state.Items)
   const dispatch = useDispatch();
   return (
-    <Wrapper>
+    <Wrapper data-testid="Cart">
       <h2>Your Cart</h2>
       {cartItems.length === 0 ? <p>No Items in cart</p> : null}
       {cartItems.map((item, index) => (

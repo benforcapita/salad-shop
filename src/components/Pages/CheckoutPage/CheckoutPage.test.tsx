@@ -1,14 +1,21 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
+import { Provider } from 'react-redux';
+import store from '../../../store';
 import CheckoutPage from './CheckoutPage';
 
-describe('<HomePage />', () => {
+describe('<CheckoutPage />', () => {
   test('it should mount', () => {
-    render(<CheckoutPage />);
+    render(
+    <Provider store={store}>
+      <CheckoutPage />
+    </Provider>
     
-    const homePage = screen.getByTestId('CheckoutPage');
+    );
+    
+    const checkoutPAGE = screen.getByTestId('CheckoutPage');
 
-    expect(homePage).toBeInTheDocument();
+    expect(checkoutPAGE).toBeInTheDocument();
   });
 });

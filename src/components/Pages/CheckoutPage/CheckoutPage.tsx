@@ -25,7 +25,7 @@ const CheckoutPage: React.FC = () => {
  
   const [openPopup, setOpen] = useState(false);
   return(
-  <Wrapper>
+  <Wrapper data-testid="CheckoutPage">
     <h1>CheckOut Page</h1>
     <div className="checkout-bg">
         {items.length === 0 ? <p>No Items in cart</p> : null}

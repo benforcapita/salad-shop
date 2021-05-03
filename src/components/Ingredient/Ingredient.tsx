@@ -14,7 +14,7 @@ type Props =
 const Ingredient: React.FC<Props> = ({item,handleAddToCart}) => {
 
   return (
-    <Wrapper>
+    <Wrapper data-testid="Ingredient" >
         <p>{item.name}</p>
         <p>{item.price}</p>
        <IconButton onClick={() => handleAddToCart(item) }><Add/></IconButton>
