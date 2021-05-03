@@ -5,7 +5,7 @@ import CartItem from './CartItem';
 import { SaladIngredientsItem } from "../../Types";
 import { Provider } from 'react-redux';
 import store from "../../store";
-import { QueryClient, QueryClientProvider } from 'react-query';
+
 
 
 var mokeData:SaladIngredientsItem = {
